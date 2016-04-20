@@ -3,7 +3,7 @@ apply plugin: 'application'
 
 archivesBaseName = "rock-paper-scissors"
 version = '1.0'
-mainClassName = "RockPaperScissors"
+mainClassName = "App"
 
 repositories {
  mavenCentral()
