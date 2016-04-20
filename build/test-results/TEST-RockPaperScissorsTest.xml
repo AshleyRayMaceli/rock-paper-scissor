@@ -1,13 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="RockPaperScissorsTest" tests="2" skipped="0" failures="1" errors="0" timestamp="2016-04-20T18:02:17" hostname="epicodus-79.local" time="0.002">
+<testsuite name="RockPaperScissorsTest" tests="5" skipped="0" failures="1" errors="0" timestamp="2016-04-20T18:33:00" hostname="epicodus-79.local" time="0.003">
   <properties/>
-  <testcase name="checkWinner_scissorsBeatsPaper_true" classname="RockPaperScissorsTest" time="0.001">
-    <failure message="java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;" type="java.lang.AssertionError">java.lang.AssertionError: expected:&lt;true&gt; but was:&lt;false&gt;
-	at org.junit.Assert.fail(Assert.java:88)
-	at org.junit.Assert.failNotEquals(Assert.java:834)
-	at org.junit.Assert.assertEquals(Assert.java:118)
+  <testcase name="playRPS_announceWinner_winningResultString" classname="RockPaperScissorsTest" time="0.002">
+    <failure message="org.junit.ComparisonFailure: expected:&lt;[Player 1 wins!]&gt; but was:&lt;[]&gt;" type="org.junit.ComparisonFailure">org.junit.ComparisonFailure: expected:&lt;[Player 1 wins!]&gt; but was:&lt;[]&gt;
+	at org.junit.Assert.assertEquals(Assert.java:115)
 	at org.junit.Assert.assertEquals(Assert.java:144)
-	at RockPaperScissorsTest.checkWinner_scissorsBeatsPaper_true(RockPaperScissorsTest.java:14)
+	at RockPaperScissorsTest.playRPS_announceWinner_winningResultString(RockPaperScissorsTest.java:38)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -53,7 +51,10 @@
 	at java.lang.Thread.run(Thread.java:745)
 </failure>
   </testcase>
+  <testcase name="checkWinner_scissorsBeatsPaper_true" classname="RockPaperScissorsTest" time="0.0"/>
   <testcase name="checkWinner_rockBeatsScissors_true" classname="RockPaperScissorsTest" time="0.0"/>
+  <testcase name="checkWinner_paperBeatsRock_true" classname="RockPaperScissorsTest" time="0.0"/>
+  <testcase name="checkWinner_scissorsLosesToRock_false" classname="RockPaperScissorsTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
