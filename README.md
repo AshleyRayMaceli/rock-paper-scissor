@@ -25,3 +25,13 @@ return correct winner
   3b. Paper wins vs. Rock, Paper, win.
   3c. Scissor wins vs. Paper, Scissor, win.
 4. When computer and player choose same symbol, "Rock" and "Rock", tie game.
+
+//Final BDD
+1. Rock beats scissors, "Rock", true
+2. Scissors beats paper, "Scissors", true
+3. Paper beats rock, "Paper", true
+4. Rock beats scissors, true, "Player 1 wins!"
+5. announce tie, false and symbols are the same, "Tie!"
+6. Scissors loses to rock, false, "Player 2 wins!"
+//Integration tests
+7. Get input of players, player1 "rock" player2 "scissors", "player 1 wins!"
