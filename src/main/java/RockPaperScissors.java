@@ -24,6 +24,7 @@ public class RockPaperScissors {
     get("/player2", (request, response) -> {
       Map<String, Object> model = new HashMap<String, Object>();
       model.put("template", "templates/player2.vtl");
+      model.put("player1", request.queryParams("player1"));
       return new ModelAndView(model, layout);
     }, new VelocityTemplateEngine());
 
@@ -65,15 +66,5 @@ public class RockPaperScissors {
         return "Player 2 wins!";
       }
     }
-
-    // public static String playRPS (String player1, String player2) {
-    //   if (checkWinner("", "") == true) {
-    //     return "Player 1 wins!";
-    //   } else if (checkWinner("", "") == false) {
-    //     return "Player 2 wins!";
-    //   } else {
-    //     return "Tie";
-    //   }
-    // }
 
 }

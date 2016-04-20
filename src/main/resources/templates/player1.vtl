@@ -1,17 +1,10 @@
 <h1>Player 1 enter your choice!</h1>
 <h2>Enter Rock, Paper or Scissors</h2>
 
-<form action='/results' method='get'>
+<form action='/player2' method='get'>
   <div class="form-group">
     <label for="player1">Symbol:</label>
     <input id="player1" name="player1" class="form-control" type="text">
   </div>
-  <!-- <input type="submit" class="btn" value="Player 2's turn"> -->
-  <!-- <a href='/player2' class="btn" role="button">Player 2's turn</a> -->
-  
-  <div class="form-group">
-    <label for="player2">Symbol:</label>
-    <input id="player2" name="player2" class="form-control" type="text">
-  </div>
-  <button type="submit" class="btn btn-info">Who won?</button>
+  <input type="submit" class="btn" value="Player 2's turn" href="/player2">
 </form>
