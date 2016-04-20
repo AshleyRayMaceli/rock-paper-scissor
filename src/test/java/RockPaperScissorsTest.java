@@ -32,9 +32,23 @@ public class RockPaperScissorsTest {
 
   // now test playRPS method
   @Test
-  public void playRPS_announceWinner_winningResultString() {
+  public void playRPS_announcePlayer1Wins_winningResultString() {
     RockPaperScissors testRockPaperScissors = new RockPaperScissors();
     String expected = "Player 1 wins!";
     assertEquals(expected, testRockPaperScissors.playRPS("rock", "scissors"));
+  }
+
+  @Test
+  public void playRPS_announceTie_winningResultString() {
+    RockPaperScissors testRockPaperScissors = new RockPaperScissors();
+    String expected = "It's a tie";
+    assertEquals(expected, testRockPaperScissors.playRPS("rock", "rock"));
+  }
+
+  @Test
+  public void playRPS_announcePlayer2Wins_winningResultString() {
+    RockPaperScissors testRockPaperScissors = new RockPaperScissors();
+    String expected = "Player 2 wins!";
+    assertEquals(expected, testRockPaperScissors.playRPS("scissors", "rock"));
   }
 }

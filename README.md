@@ -9,12 +9,12 @@ return correct winner
 
 
 //Mike's suggested specs
-1. Rock beats scissors, "Rock", "Player 1 wins!"
-2. Scissors beats paper, "Scissors", "Player 1  wins!"
-3. Paper beats rock, "Paper", "Player 1 wins"
-4. Scissors loses to rock, "Scissors", "Player 2 wins!"
-5. Paper loses to scissors, "Paper", "Player 2 wins!"
-6. Rock loses to paper, "Rock", "Player 2 wins!"
+1. Rock beats scissors, "Rock", true
+2. Scissors beats paper, "Scissors", true
+3. Paper beats rock, "Paper", true
+4. Scissors loses to rock, false
+5. Paper loses to scissors, false
+6. Rock loses to paper, false
 7. Rock ties rock, "Rock", "Tie game, play again"
 
 
