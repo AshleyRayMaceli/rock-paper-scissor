@@ -8,6 +8,16 @@
 return correct winner
 
 
+//Mike's suggested specs
+1. Rock beats scissors, "Rock", "Player 1 wins!"
+2. Scissors beats paper, "Scissors", "Player 1  wins!"
+3. Paper beats rock, "Paper", "Player 1 wins"
+4. Scissors loses to rock, "Scissors", "Player 2 wins!"
+5. Paper loses to scissors, "Paper", "Player 2 wins!"
+6. Rock loses to paper, "Rock", "Player 2 wins!"
+7. Rock ties rock, "Rock", "Tie game, play again"
+
+
 //Our initial specs
 1. User enters symbol choice, "Paper", "Paper"
 2. Computer randomly chooses Rock or Paper or Scissor, String "Rock",       String "Rock".
